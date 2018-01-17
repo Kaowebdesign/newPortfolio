@@ -1,0 +1,221 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+html {
+  font-size: 16px; }
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px; }
+
+a {
+  outline: none;
+  text-decoration: none; }
+
+li {
+  list-style-type: none;
+  display: inline-block; }
+
+@font-face {
+  font-family: CaviarDreams;
+  /* Гарнитура шрифта */
+  src: url(../fonts/CaviarDreams.ttf);
+  /* Путь к файлу со шрифтом */ }
+
+.header {
+  position: relative;
+  padding: 20px 20px 0;
+  background-color: #fff; }
+  .header__content {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 100vh;
+    min-height: 500px;
+    background-image: url(../img/back411.jpg);
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-attachment: fixed;
+    -webkit-animation-duration: 15s;
+            animation-duration: 15s;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-name: backImg;
+            animation-name: backImg; }
+
+@-webkit-keyframes backImg {
+  0% {
+    background-size: 120%; }
+  100% {
+    background-size: 100%; } }
+
+@keyframes backImg {
+  0% {
+    background-size: 120%; }
+  100% {
+    background-size: 100%; } }
+  .header__center {
+    width: 100%;
+    padding: 20px;
+    z-index: 10; }
+  .header__caption {
+    font-size: 3.625em;
+    color: #fff;
+    text-shadow: 1px 4px 0 #456; }
+  .header__capt {
+    font-size: 1.75em;
+    color: #cacaca; }
+  .header__list {
+    color: #949494;
+    font-size: 1em; }
+  .header__btn {
+    display: inline-block;
+    font-size: 1em;
+    color: #FFB600;
+    border: 1px solid #FFB600;
+    padding: 10px 2rem;
+    margin-top: 20px;
+    -webkit-border-radius: 4px;
+            border-radius: 4px;
+    text-transform: uppercase; }
+  .header__bottom {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+  .header__bText {
+    color: #dbdbdb; }
+  .header__down {
+    -webkit-transition: .9s;
+    transition: .9s; }
+    .header__down:hover {
+      opacity: .7; }
+  .header__back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.55); }
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100px;
+  padding: 0 20px 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-transition: .9s;
+  transition: .9s; }
+  .nav-active {
+    background: rgba(0, 0, 0, 0.74);
+    height: 70px; }
+  .nav__left {
+    position: relative; }
+    .nav__left::after {
+      position: absolute;
+      content: "KAO Web Design";
+      color: #fff;
+      font-size: 1em;
+      font-family: CaviarDreams;
+      -webkit-transition: .8s;
+      transition: .8s; }
+  .nav__link:hover .nav__left::after {
+    color: #FFB600; }
+  .nav__logo {
+    max-width: 50px;
+    margin-left: 20px;
+    float: left; }
+  .nav__right {
+    margin-right: 20px;
+    padding: 5px;
+    width: 61px;
+    height: 50px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    cursor: pointer; }
+  .nav__right:hover .nav__bar {
+    width: 40px;
+    background-color: #FFB600; }
+  .nav__bar {
+    display: block;
+    width: 45px;
+    height: 4px;
+    background: #fff;
+    margin: 3px;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    -webkit-transition: .8s;
+    transition: .8s; }
+    .nav__bar:nth-child(2) {
+      width: 20px; }
+    .nav__bar:nth-child(3) {
+      width: 40px; }
+    .nav__bar:nth-child(4) {
+      width: 30px; }
+
+.main {
+  position: relative;
+  width: 100%;
+  min-height: 600px;
+  background: #f00; }
