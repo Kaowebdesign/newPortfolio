@@ -16,11 +16,9 @@ $BaseWhite:#FFB600;
         background-size: 120%;
         background-attachment: fixed;
         animation-duration: 15s;
-        // animation-delay: 1s;
         animation-timing-function: ease;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
-        // animation-direction: alternate;
         animation-name: backImg;
     }
     @keyframes backImg {
@@ -39,7 +37,7 @@ $BaseWhite:#FFB600;
     &__caption {
         font-size: (58em/16);
         color: #fff;
-        text-shadow: 1px 4px 0 #456;
+        text-shadow: 3px 3px 0 #456;
     }
     &__capt {
         font-size: (28em/16);
@@ -145,7 +143,7 @@ $BaseWhite:#FFB600;
         background: #fff;
         margin: 3px;
         border-radius: 3px;
-        transition: .8s;
+        transition: .9s;
         &:nth-child(2) {
             width: 20px;
         }
@@ -154,6 +152,23 @@ $BaseWhite:#FFB600;
         }
         &:nth-child(4) {
             width: 30px;
+        }
+        &-active {
+            transition: .9s;
+            .nav__bar:nth-child(2),
+            .nav__bar:nth-child(3) {
+                opacity: 0;
+            }
+            .nav__bar:first-child {
+                transform: rotate(45deg) translateY(21px);
+                width: 40px;
+                background-color: $BaseWhite;
+            }
+            .nav__bar:last-child {
+                transform: rotate(-45deg) translateY(-21px);
+                width: 40px;
+                background-color: $BaseWhite;
+            }
         }
     }
 }
