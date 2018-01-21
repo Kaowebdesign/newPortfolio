@@ -1,13 +1,16 @@
 $(document).ready(function() {
-    var nav = $('#nav');
-    var navBars = $('#navBars');
+    var navk = $('#nav');
+    var navBarsk = $('#navBars');
+    var menuK = $('#menu');
     $(window).scroll(function() {
-        if (window.scrollY > 75) {
-            nav.addClass('nav-active');
-        } else nav.removeClass('nav-active');
+        if (window.scrollY > 80 && menuK.hasClass('header__menu-active')) {
+            navk.addClass('nav-active');
+        } else navk.removeClass('nav-active');
     });
-    navBars.on('click', function(e) {
+    navBarsk.on('click', function(e) {
         e.preventDefault();
-        navBars.toggleClass('nav__bar-active');
+        navk.toggleClass('nav-active');
+        navBarsk.toggleClass('nav__bar-active');
+        menuK.toggleClass('header__menu-active');
     })
 });

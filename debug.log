@@ -1,1 +1,6 @@
 [1222/224016:ERROR:prune_crash_reports.cc(35)] PruneCrashReportDatabase: Failed to get pending reports
+[0118/183140.809:ERROR:process_reader_win.cc(151)] SuspendThread: Отказано в доступе. (0x5)
+[0118/183140.811:ERROR:process_reader_win.cc(151)] SuspendThread: Отказано в доступе. (0x5)
+[0118/183140.811:ERROR:process_reader_win.cc(151)] SuspendThread: Отказано в доступе. (0x5)
+[0118/183140.811:ERROR:exception_snapshot_win.cc(87)] thread ID 8544 not found in process
+[0118/183140.811:WARNING:crash_report_exception_handler.cc(62)] ProcessSnapshotWin::Initialize failed

@@ -30,7 +30,8 @@ li {
 .header {
   position: relative;
   padding: 20px 20px 0;
-  background-color: #fff; }
+  background-color: #fff;
+  /*Здесь короче стили для меню уже*/ }
   .header__content {
     position: relative;
     display: -webkit-box;
@@ -129,12 +130,33 @@ li {
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.55); }
+  .header__menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #1e1e1e;
+    z-index: 900;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .header__menu-active {
+      display: none; }
+  .header__menuList {
+    width: 60%;
+    padding-top: 100px; }
+  .header__contacts {
+    width: 40%;
+    padding-top: 100px;
+    background: #0f0f0f; }
 
 .nav {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 901;
   width: 100%;
   height: 100px;
   padding: 0 20px 10px;
