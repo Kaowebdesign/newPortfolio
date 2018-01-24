@@ -2,5 +2,21 @@
     position: relative;
     width: 100%;
     min-height: 600px;
-    background: #f00;
+    background: rgb(255, 255, 255);
+    &__creativ {
+        width: 100%;
+        padding: 4rem 1rem;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    &__creativItem {
+        text-align: center;
+    }
+    &__creaImg {
+        max-width: 100px;
+    }
+    &__creaCapt {
+        margin-top: 20px;
+    }
 }

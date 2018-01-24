@@ -9,7 +9,7 @@ header.header
             a(href="#").header__btn Contact me
         .header__bottom
             p.header__bText Learn more about what i do
-            a(href="#").header__down
+            a(href="#about").header__down
                 img(src="img/down-arrow.png" alt="arrow down")
     .nav#nav
         a(href="/").nav__link
@@ -22,4 +22,55 @@ header.header
             i.nav__bar
     section#menu.header__menu.header__menu-active
         nav.header__menuList
+            ul.header__items
+                li.header__item 
+                    .header__iconCont
+                        i.header__icon
+                        i.header__icon
+                    a(href="#about").header__iLink About me
+                    .header__iconCont
+                        i.header__icon
+                        i.header__icon
+                li.header__item
+                    .header__iconCont
+                        i.header__icon
+                        i.header__icon
+                    a(href="#skills").header__iLink Skills
+                    .header__iconCont
+                        i.header__icon
+                        i.header__icon
+                li.header__item
+                    .header__iconCont
+                        i.header__icon
+                        i.header__icon
+                    a(href="#projects").header__iLink My projects
+                    .header__iconCont
+                        i.header__icon
+                        i.header__icon
+                li.header__item
+                    .header__iconCont
+                        i.header__icon
+                        i.header__icon
+                    a(href="#contact").header__iLink Contact me
+                    .header__iconCont
+                        i.header__icon
+                        i.header__icon
         .header__contacts
+            .header__contact
+                h2.header__contCapt Contact me
+                .header__contBlock
+                    i.fa.fa-phone
+                    a(href="tel: +380988661190").header__contIcon +38 098 866 1190 (UA)
+                .header__contBlock
+                    i.fa.fa-envelope
+                    a(href="mailto: assdwqe@gmail.com").header__contIcon assdwqe@gmail.com
+            .header__contactDuo
+                h2.header__contCapt Stay connected
+                a(href="https://www.facebook.com/kaowebdesign/").header__contLink
+                    i.fa.fa-facebook-square
+                a(href="https://github.com/Kaowebdesign").header__contLink
+                    i.fa.fa-github-square
+                a(href="").header__contLink
+                    i.fa.fa-instagram
+                a(href="").header__contLink
+                    i.fa.fa-vk

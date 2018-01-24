@@ -93,18 +93,89 @@ $BaseWhite:#FFB600;
         background: rgb(30, 30, 30);
         z-index: 900;
         display: flex;
+        transition: .9s;
         &-active {
             display: none;
+            transition: .9s;
         }
     }
     &__menuList {
         width: 60%;
         padding-top: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__items {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        color: rgb(150, 150, 150);
+        font-size: (32em/16);
+        padding: 10px;
+        cursor: pointer;
+        &:hover .header__icon {
+            width: 40px;
+        }
+        &:hover .header__iLink {
+            color: #fff;
+        }
+    }
+    &__icon {
+        display: block;
+        width: 0;
+        height: 1px;
+        margin: 3px 0;
+        background: #fff;
+        transition: .8s;
+    }
+    &__iLink {
+        padding: 0 20px;
+        transition: .8s;
     }
     &__contacts {
         width: 40%;
+        color: #fff;
         padding-top: 100px;
         background: rgb(15, 15, 15);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__contBlock {
+        display: flex;
+        align-items: center;
+    }
+    &__contCapt {
+        color: $BaseWhite;
+        padding: 20px;
+    }
+    &__contIcon {
+        display: block;
+        color: rgb(150, 150, 150);
+        padding: 15px 10px;
+        transition: .9s;
+        &:hover {
+            color: #fff;
+        }
+    }
+    &__contactDuo {
+        text-align: center;
+    }
+    &__contLink {
+        font-size: (32em/16);
+        color: #fff;
+        padding: 10px;
+        transition: .8s;
+        &:hover {
+            opacity: .5;
+        }
     }
 }
 
@@ -135,16 +206,12 @@ $BaseWhite:#FFB600;
             transition: .8s;
         }
     }
-    &__link:hover .nav__left::after {
-        color: $BaseWhite;
-    }
     &__logo {
         max-width: 50px;
         margin-left: 20px;
         float: left;
     }
     &__right {
-        // background: #000;
         margin-right: 20px;
         padding: 5px;
         width: 61px;
