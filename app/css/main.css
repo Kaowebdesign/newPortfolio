@@ -87,6 +87,7 @@ li {
     color: #949494;
     font-size: 1em; }
   .header__btn {
+    position: relative;
     display: inline-block;
     font-size: 1em;
     color: #FFB600;
@@ -95,7 +96,34 @@ li {
     margin-top: 20px;
     -webkit-border-radius: 4px;
             border-radius: 4px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    -webkit-transition: 1s ease-out;
+    transition: 1s ease-out; }
+    .header__btn::before {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #FFB600;
+      -webkit-transform: scale(0);
+          -ms-transform: scale(0);
+              transform: scale(0);
+      -webkit-transition-property: -webkit-transform;
+      transition-property: -webkit-transform;
+      transition-property: transform;
+      transition-property: transform, -webkit-transform;
+      -webkit-transition: .5s ease-out;
+      transition: .5s ease-out; }
+    .header__btn:hover::before {
+      -webkit-transform: scale(1);
+          -ms-transform: scale(1);
+              transform: scale(1); }
+    .header__btn:hover {
+      color: #000; }
   .header__bottom {
     position: absolute;
     bottom: 20px;
@@ -207,7 +235,8 @@ li {
   .header__iLink {
     padding: 0 20px;
     -webkit-transition: .8s;
-    transition: .8s; }
+    transition: .8s;
+    text-transform: uppercase; }
   .header__contacts {
     width: 40%;
     color: #fff;
@@ -260,6 +289,67 @@ li {
     transition: .8s; }
     .header__contLink:hover {
       opacity: .5; }
+  .header__fixMenu {
+    position: fixed;
+    width: 150px;
+    height: 230px;
+    top: 50%;
+    right: -150px;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    background: yellow;
+    z-index: 10; }
+  .header__fixBox {
+    position: relative; }
+  .header__fixItem {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 50px;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition: .9s;
+    transition: .9s;
+    padding-left: 15px; }
+    .header__fixItem:hover {
+      right: 95%; }
+    .header__fixItem:nth-child(2) {
+      top: 60px; }
+    .header__fixItem:nth-child(3) {
+      top: 120px; }
+    .header__fixItem:nth-child(4) {
+      top: 180px; }
+    .header__fixItem::before {
+      content: "";
+      position: absolute;
+      left: -5px;
+      display: block;
+      width: 5px;
+      height: 50px;
+      background: #FFB600; }
+    .header__fixItem:nth-child(2)::before {
+      background: #BAF300; }
+    .header__fixItem:nth-child(3)::before {
+      background: #F5001D; }
+    .header__fixItem:nth-child(4)::before {
+      background: #162EAE; }
+  .header__fixLink {
+    padding: 5px 10px;
+    text-transform: uppercase; }
 
 .nav {
   position: fixed;
@@ -368,7 +458,7 @@ li {
   background: white; }
   .main__creativ {
     width: 100%;
-    padding: 4rem 1rem;
+    padding: 8rem 1rem;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -384,4 +474,38 @@ li {
   .main__creaImg {
     max-width: 100px; }
   .main__creaCapt {
-    margin-top: 20px; }
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: 300; }
+  .main__about {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    min-height: 600px;
+    background: #e7e7e7; }
+  .main__abLeft, .main__abRight {
+    width: 50%; }
+  .main__abLeft {
+    padding: 0px 20px 20px 0px; }
+  .main__abText {
+    font-size: 1.5em;
+    margin: 10px 0; }
+  .main__abSkills {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin: 30px 0; }
+  .main__abRight {
+    text-align: center; }
+  .main__abCaption {
+    font-size: 2em;
+    text-transform: uppercase; }
+  .main__abImgCont {
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto; }
+  .main__abImg {
+    width: 100%;
+    height: auto; }

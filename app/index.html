@@ -16,6 +16,7 @@
     <meta name="author" content="by Andrey Karnaukh">
     <script src="js/libs.min.js"></script>
     <script src="js/common.js"></script>
+    <script src="js/components/scrolling.js"></script>
   </head>
   <body> 
     <header class="header">
@@ -68,6 +69,14 @@
           </div>
         </div>
       </section>
+      <nav class="header__fixMenu">
+        <ul class="header__fixBox">
+          <li class="header__fixItem"><i class="fa fa-user"></i><a class="header__fixLink" href="#about">About me</a></li>
+          <li class="header__fixItem"><i class="fa fa-line-chart"></i><a class="header__fixLink" href="#skills">Skills</a></li>
+          <li class="header__fixItem"><i class="fa fa-code"></i><a class="header__fixLink" href="#projects">My projects</a></li>
+          <li class="header__fixItem"><i class="fa fa-comments"></i><a class="header__fixLink" href="#contact">Contact me</a></li>
+        </ul>
+      </nav>
     </header>
     <main class="main">
       <div class="main__creativ">
@@ -79,6 +88,17 @@
         </div>
         <div class="main__creativItem"><img class="main__creaImg" src="img/infinity.png" alt="infinity">
           <h2 class="main__creaCapt">Minimal</h2>
+        </div>
+      </div>
+      <div class="main__about" id="about">
+        <div class="main__abLeft">
+          <h1 class="main__abCaption">About me</h1>
+          <p class="main__abSkills">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, numquam.</p>
+          <p class="main__abText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iure animi enim suscipit sunt mollitia pariatur voluptate doloribus nam quam debitis hic laborum, vitae laudantium culpa labore blanditiis rem? Quaerat earum ad ratione laboriosam quibusdam dignissimos enim rerum et eum, nisi voluptatem aperiam autem dolorem amet repellat odio harum reiciendis!</p>
+          <p class="main__abText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, molestias. Adipisci aut inventore libero natus ratione cum sit, alias, perferendis qui, id non ab nostrum est in dicta obcaecati accusamus? Quod ducimus sapiente quisquam provident.</p>
+        </div>
+        <div class="main__abRight">
+          <div class="main__abImgCont"><img class="main__abImg" src="img/my1.jpg" alt="Me"></div>
         </div>
       </div>
     </main>

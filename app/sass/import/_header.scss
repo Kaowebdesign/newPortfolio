@@ -48,6 +48,7 @@ $BaseWhite:#FFB600;
         font-size: (16em/16);
     }
     &__btn {
+        position: relative;
         display: inline-block;
         font-size: (16em/16);
         color: $BaseWhite;
@@ -56,6 +57,28 @@ $BaseWhite:#FFB600;
         margin-top: 20px;
         border-radius: 4px;
         text-transform: uppercase;
+        transition: 1s ease-out;
+        &::before {
+            content: "";
+            display: block;
+            //border-radius: 2px;
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: $BaseWhite;
+            transform: scale(0);
+            transition-property: transform;
+            transition: .5s ease-out;
+        }
+        &:hover::before {
+            transform: scale(1);
+        }
+        &:hover {
+            color: #000;
+        }
     }
     &__bottom {
         position: absolute;
@@ -137,6 +160,7 @@ $BaseWhite:#FFB600;
     &__iLink {
         padding: 0 20px;
         transition: .8s;
+        text-transform: uppercase;
     }
     &__contacts {
         width: 40%;
@@ -176,6 +200,67 @@ $BaseWhite:#FFB600;
         &:hover {
             opacity: .5;
         }
+    }
+    &__fixMenu {
+        position: fixed;
+        width: 150px;
+        height: 230px;
+        top: 50%;
+        right: -150px;
+        transform: translateY(-50%);
+        background: yellow;
+        z-index: 10;
+    }
+    &__fixBox {
+        position: relative;
+    }
+    &__fixItem {
+        position: absolute;
+        right: 0;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 50px;
+        background: #000;
+        color: #fff;
+        cursor: pointer;
+        transition: .9s;
+        padding-left: 15px;
+        &:hover {
+            right: 95%;
+        }
+        &:nth-child(2) {
+            top: 60px;
+        }
+        &:nth-child(3) {
+            top: 120px;
+        }
+        &:nth-child(4) {
+            top: 180px;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            left: -5px;
+            display: block;
+            width: 5px;
+            height: 50px;
+            background: $BaseWhite;
+        }
+        &:nth-child(2)::before {
+            background: #BAF300;
+        }
+        &:nth-child(3)::before {
+            background: #F5001D;
+        }
+        &:nth-child(4)::before {
+            background: #162EAE;
+        }
+    }
+    &__fixLink {
+        padding: 5px 10px;
+        text-transform: uppercase;
     }
 }
 
