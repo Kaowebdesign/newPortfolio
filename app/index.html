@@ -20,6 +20,10 @@
   </head>
   <body> 
     <header class="header">
+      <div class="header__lineT"></div>
+      <div class="header__lineB"></div>
+      <div class="header__lineL"></div>
+      <div class="header__lineR"></div>
       <section class="header__content">
         <div class="header__back"></div>
         <div class="header__center">
@@ -27,16 +31,15 @@
           <ul>
             <li class="header__list">Front End Developer /</li>
             <li class="header__list">WordPress</li>
-          </ul><a class="header__btn" href="#">Contact me</a>
+          </ul><a class="header__btn" href="#about">About me</a>
         </div>
         <div class="header__bottom">
           <p class="header__bText">Learn more about what i do</p><a class="header__down" href="#about"><img src="img/down-arrow.png" alt="arrow down"></a>
         </div>
       </section>
-      <div class="nav" id="nav"><a class="nav__link" href="/">
-          <div class="nav__left"><img class="nav__logo" src="img/logo.png" alt="logo"></div></a>
-        <div class="nav__right clicker" id="navBars"><i class="nav__bar"></i><i class="nav__bar"></i><i class="nav__bar"></i><i class="nav__bar"></i></div>
-      </div>
+      <div class="header__logoCont" id="logo"><a class="header__linkLogo" href="/">
+          <div class="header__left"><img class="header__logo" src="img/logo.png" alt="logo"></div></a></div>
+      <div class="header__rightBars clicker" id="navBars"><i class="header__bar"></i><i class="header__bar"></i><i class="header__bar"></i><i class="header__bar"></i></div>
       <section class="header__menu header__menu-active" id="menu">
         <nav class="header__menuList">
           <ul class="header__items">
@@ -79,6 +82,7 @@
       </nav>
     </header>
     <main class="main">
+      <div class="main__back"></div>
       <div class="main__creativ">
         <div class="main__creativItem"><img class="main__creaImg" src="img/creativity.png" alt="creativity">
           <h2 class="main__creaCapt">Creativity</h2>
@@ -91,22 +95,15 @@
         </div>
       </div>
       <div class="main__about" id="about">
-        <div class="main__abLeft">
-          <h1 class="main__abCaption">About me</h1>
-          <p class="main__abSkills">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, numquam.</p>
-          <p class="main__abText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iure animi enim suscipit sunt mollitia pariatur voluptate doloribus nam quam debitis hic laborum, vitae laudantium culpa labore blanditiis rem? Quaerat earum ad ratione laboriosam quibusdam dignissimos enim rerum et eum, nisi voluptatem aperiam autem dolorem amet repellat odio harum reiciendis!</p>
-          <p class="main__abText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, molestias. Adipisci aut inventore libero natus ratione cum sit, alias, perferendis qui, id non ab nostrum est in dicta obcaecati accusamus? Quod ducimus sapiente quisquam provident.</p>
+        <h1 class="main__abCaption">About me</h1><img class="main__abImg" src="img/my1.jpg" alt="Me">
+        <div class="main__abTextCont">
+          <p class="main__abSkills">Who is this guy?</p>
+          <p class="main__abText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iure animi enim suscipit sunt mollitia pariatur voluptate doloribus nam quam debitis hic laborum, vitae laudantium culpa labore blanditiis rem.</p>
+          <p class="main__abText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, molestias. Adipisci aut inventore libero natus ratione cum sit, alias, perferendis qui.</p><a class="main__abLink" href="resume.docx" download><i class="fa fa-download"> </i><span class="main__abLinkText">Download Resume</span></a>
         </div>
-        <div class="main__abRight">
-          <div class="main__abImgCont"><img class="main__abImg" src="img/my1.jpg" alt="Me">
-            <div class="main__abBack">
-              <div>
-                <h3 class="main__abConCapt">Contact me</h3>
-                <div class="main__abContact">   <a class="main__abLink" href=""><i class="fa fa-phone"></i></a><a class="main__abLink" href=""><i class="fa fa-skype"></i></a><a class="main__abLink" href=""><i class="fa fa-facebook-square"></i></a><a class="main__abLink" href=""><i class="fa fa-instagram"></i></a><a class="main__abLink" href=""><i class="fa fa-vk"></i></a></div>
-              </div>
-            </div>
-          </div>
-        </div>
+      </div>
+      <div class="main__skills" id="skills">
+        <h1 class="main__skCaption">My Skills</h1>
       </div>
     </main>
     <footer class="footer"></footer>

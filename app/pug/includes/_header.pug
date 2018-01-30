@@ -1,4 +1,8 @@
 header.header
+    .header__lineT
+    .header__lineB
+    .header__lineL
+    .header__lineR
     section.header__content
         .header__back
         .header__center
@@ -6,20 +10,20 @@ header.header
             ul
                 li.header__list Front End Developer /
                 li.header__list WordPress
-            a(href="#").header__btn Contact me
+            a(href="#about").header__btn About me
         .header__bottom
             p.header__bText Learn more about what i do
             a(href="#about").header__down
                 img(src="img/down-arrow.png" alt="arrow down")
-    .nav#nav
-        a(href="/").nav__link
-            .nav__left
-                img(src="img/logo.png" alt="logo").nav__logo
-        .nav__right#navBars.clicker
-            i.nav__bar
-            i.nav__bar
-            i.nav__bar
-            i.nav__bar
+    .header__logoCont#logo
+        a(href="/").header__linkLogo
+            .header__left
+                img(src="img/logo.png" alt="logo").header__logo
+    .header__rightBars#navBars.clicker
+        i.header__bar
+        i.header__bar
+        i.header__bar
+        i.header__bar
     section#menu.header__menu.header__menu-active
         nav.header__menuList
             ul.header__items

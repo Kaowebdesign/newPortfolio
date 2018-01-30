@@ -3,20 +3,11 @@ $(document).ready(function() {
     var navBarsk = $('#navBars');
     var menuK = $('#menu');
     var clicker = $('.clicker');
-    if (window.scrollY > 80 && menuK.hasClass('header__menu-active')) {
-        navk.addClass('nav-active');
-    } else navk.removeClass('nav-active');
-    $(window).scroll(function() {
-        if (window.scrollY > 80 && menuK.hasClass('header__menu-active')) {
-            navk.addClass('nav-active');
-        } else navk.removeClass('nav-active');
-    });
+    var logo = $('#logo');
     clicker.on('click', function(e) {
         e.preventDefault();
-        navBarsk.toggleClass('nav__bar-active');
+        navBarsk.toggleClass('header__bar-active');
         menuK.toggleClass('header__menu-active');
-        if (window.scrollY > 80 && menuK.hasClass('header__menu-active')) {
-            navk.addClass('nav-active');
-        } else navk.removeClass('nav-active');
+        logo.toggleClass('header__logoCont-active');
     });
 });
