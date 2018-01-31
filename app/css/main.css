@@ -460,6 +460,7 @@ li {
     margin-left: 10px;
     float: left; }
 
+/*---Шаблон для заголовков---*/
 .main__abCaption, .main__skCaption {
   font-size: 2.5em;
   font-weight: 300;
@@ -472,6 +473,11 @@ li {
     height: 4px;
     background: #FFB600;
     margin: 0 auto; }
+
+/*---Шаблон для Блока обо мне---*/
+.main__abLeft, .main__abRight {
+  width: 50%;
+  padding: 0 40px; }
 
 .main {
   position: relative;
@@ -515,7 +521,11 @@ li {
     background-size: cover; }
   .main__about {
     position: relative;
-    padding: 60px 40px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 30px 0px;
     min-height: 600px;
     background: #fafafa;
     background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#f6f6f6));
@@ -524,6 +534,10 @@ li {
     -webkit-box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
             box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
     text-align: center; }
+  .main__abLeft {
+    padding-right: 10px; }
+  .main__abRight {
+    padding-left: 10px; }
   .main__abTextCont {
     max-width: 768px;
     margin: 0 auto;
@@ -531,7 +545,8 @@ li {
   .main__abText {
     font-size: 1.25em;
     margin: 10px 0;
-    text-align: justify; }
+    text-align: justify;
+    font-weight: 300; }
   .main__abLink {
     position: relative;
     display: inline-block;
@@ -547,23 +562,21 @@ li {
     padding: 10px; }
   .main__abSkills {
     font-size: 1.25em;
-    text-align: center;
+    text-align: left;
     text-transform: uppercase;
     margin: 20px 0; }
   .main__abImg {
     display: block;
     width: 100%;
-    max-width: 200px;
+    max-width: 550px;
     height: auto;
     -webkit-transition: 1s ease-out;
     transition: 1s ease-out;
-    margin: 30px auto 0;
-    -webkit-border-radius: 100%;
-            border-radius: 100%;
+    margin: 0 auto;
     -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25), 0 5px 10px rgba(0, 0, 0, 0.22);
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25), 0 5px 10px rgba(0, 0, 0, 0.22); }
   .main__skills {
-    min-height: 600px;
+    min-height: 800px;
     background-color: rgba(0, 0, 0, 0.52);
     padding: 60px 40px; }
   .main__skCaption {
