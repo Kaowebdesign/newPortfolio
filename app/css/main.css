@@ -476,8 +476,12 @@ li {
 
 /*---Шаблон для Блока обо мне---*/
 .main__abLeft, .main__abRight {
-  width: 50%;
-  padding: 0 40px; }
+  width: 50%; }
+
+/*---Контейнер---*/
+.container {
+  max-width: 1200px;
+  margin: 0 auto; }
 
 .main {
   position: relative;
@@ -490,18 +494,20 @@ li {
   /*---Мои навыки---*/ }
   .main__creativ {
     width: 100%;
-    padding: 8rem 1rem;
+    padding: 8rem 0;
+    background: #fff; }
+  .main__creaCont {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-    background: #fff; }
+            flex-wrap: wrap; }
   .main__creativItem {
     text-align: center; }
   .main__creaImg {
@@ -525,7 +531,7 @@ li {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    padding: 30px 0px;
+    padding: 30px;
     min-height: 600px;
     background: #fafafa;
     background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#f6f6f6));
@@ -534,10 +540,28 @@ li {
     -webkit-box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
             box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
     text-align: center; }
-  .main__abLeft {
-    padding-right: 10px; }
+  .main__abTop {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    -webkit-box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.25);
+            box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.25); }
   .main__abRight {
-    padding-left: 10px; }
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    text-align: right; }
   .main__abTextCont {
     max-width: 768px;
     margin: 0 auto;
@@ -566,15 +590,38 @@ li {
     text-transform: uppercase;
     margin: 20px 0; }
   .main__abImg {
-    display: block;
     width: 100%;
     max-width: 550px;
     height: auto;
     -webkit-transition: 1s ease-out;
-    transition: 1s ease-out;
-    margin: 0 auto;
-    -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25), 0 5px 10px rgba(0, 0, 0, 0.22);
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25), 0 5px 10px rgba(0, 0, 0, 0.22); }
+    transition: 1s ease-out; }
+  .main__abBot {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 2rem 0 0; }
+  .main__abImgItem {
+    max-width: 170px;
+    margin: 5px;
+    border: .4rem solid #fff;
+    -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+    -webkit-transition: .8s ease-out;
+    transition: .8s ease-out; }
+    .main__abImgItem:hover {
+      border-color: #FFB600; }
+    .main__abImgItem:first-child {
+      margin-left: 0; }
+    .main__abImgItem:last-child {
+      margin-right: 0; }
   .main__skills {
     min-height: 800px;
     background-color: rgba(0, 0, 0, 0.52);
