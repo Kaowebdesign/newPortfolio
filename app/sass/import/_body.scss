@@ -83,10 +83,12 @@
     &__abTop {
         display: flex;
         margin: 0;
-        box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.25);
+        box-shadow: 3px 3px 6px -2px rgba(0, 0, 0, 0.3);
+        //box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.1);
     }
     &__abLeft {
         @extend %about;
+        padding-bottom: 10px;
     }
     &__abRight {
         @extend %about;
@@ -127,16 +129,35 @@
         text-transform: uppercase;
         margin: 20px 0;
     }
+    &__abSoc {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 3rem 0 2rem;
+    }
+    &__abSocLink {
+        width: 40px;
+        height: 40px;
+        background: #000;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .8s ease-out;
+        margin: 5px;
+        &:hover {
+            color: $BaseWhite;
+        }
+    }
     &__abCaption {
         @extend %mainCaption;
     }
     &__abImg {
-        // display: block;
         width: 100%;
         max-width: 550px;
         height: auto;
         transition: 1s ease-out;
-        //box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25), 0 5px 10px rgba(0, 0, 0, 0.22);
     }
     &__abBot {
         display: flex;
@@ -148,7 +169,7 @@
         max-width: 170px;
         margin: 5px;
         border: .4rem solid #fff;
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+        box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.25);
         transition: .8s ease-out;
         &:hover {
             border-color: $BaseWhite;
